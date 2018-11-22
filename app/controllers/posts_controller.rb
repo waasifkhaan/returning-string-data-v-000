@@ -4,11 +4,6 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
   end
-  
-  def body
-    post = Post.find(params[:id])
-    render plain: post.description
-  end
 
   def show
   end
@@ -24,6 +19,10 @@ class PostsController < ApplicationController
   end
 
   def edit
+  end
+  def body
+    post = Post.find(params[:id])
+    render plain: post.description
   end
 
   def update
