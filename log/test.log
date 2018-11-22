@@ -1411,3 +1411,8 @@ Started PATCH "/posts/1" for 127.0.0.1 at 2018-11-22 18:52:17 +0000
 Started GET "/posts/1" for 127.0.0.1 at 2018-11-22 18:54:38 +0000
 Processing by PostsController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
