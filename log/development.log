@@ -2154,3 +2154,176 @@ Processing by PostsController#edit as */*
   [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 11]]
   Rendered posts/edit.html.erb within layouts/application (2.4ms)
 Completed 200 OK in 206ms (Views: 203.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-11-25 15:49:50 -0600
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/new.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 226ms (Views: 177.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2018-11-25 15:50:00 -0600
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (5.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered posts/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 204ms (Views: 193.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 15:50:36 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.9ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (99.3ms)
+Completed 200 OK in 385ms (Views: 378.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 15:53:24 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (218.1ms)
+Completed 200 OK in 532ms (Views: 530.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 15:56:40 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (181.5ms)
+Completed 200 OK in 442ms (Views: 439.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 15:57:03 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (105.7ms)
+Completed 200 OK in 304ms (Views: 302.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2018-11-25 15:57:03 -0600
+Processing by PostsController#edit as */*
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (19.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered posts/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 659ms (Views: 578.1ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 15:57:18 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (92.3ms)
+Completed 200 OK in 318ms (Views: 316.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2018-11-25 15:57:19 -0600
+Processing by PostsController#edit as */*
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered posts/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1049ms (Views: 993.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-11-25 16:03:06 -0600
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (7.7ms)
+  Rendered posts/new.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 365ms (Views: 363.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/11/edit" for 127.0.0.1 at 2018-11-25 16:03:07 -0600
+Processing by PostsController#edit as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered posts/_form.html.erb (6.4ms)
+  Rendered posts/edit.html.erb within layouts/application (882.7ms)
+Completed 200 OK in 2377ms (Views: 2258.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 16:08:38 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (145.2ms)
+Completed 200 OK in 411ms (Views: 407.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 16:14:59 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.9ms)
+  Rendered posts/index.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 188ms (Views: 185.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2018-11-25 16:14:59 -0600
+Processing by PostsController#edit as */*
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered posts/_form.html.erb (5.7ms)
+  Rendered posts/edit.html.erb within layouts/application (267.4ms)
+Completed 200 OK in 666ms (Views: 659.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 16:20:31 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (74.4ms)
+Completed 200 OK in 207ms (Views: 205.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2018-11-25 16:20:34 -0600
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (1.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/edit.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 183ms (Views: 178.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-11-25 16:21:19 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/index.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 201ms (Views: 198.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2018-11-25 16:21:25 -0600
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (1.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered posts/_form.html.erb (14.8ms)
+  Rendered posts/edit.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 210ms (Views: 200.0ms | ActiveRecord: 1.8ms)

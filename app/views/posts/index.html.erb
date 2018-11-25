@@ -1,4 +1,4 @@
-<% @posts.reverse.each do |post| %>
+<% @posts.each do |post| %>
   <%= render partial: "post", locals: {post: post} %>
 <% end %>
 
@@ -13,14 +13,7 @@ $(function () {
   });
 });
 
-$(function () {
-  $(".js-update").on('click', function() {
-    var id = $(this).data("id");
-    $.get("/posts/" + id + "/edit", function(data) {
-      // Replace text of body-id div
-      $("#body-" + id).text(data);
-    });
-  });
+
 });
 
 
